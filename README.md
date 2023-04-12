@@ -16,9 +16,9 @@ Second, run the vbs script as administrator. You may need to right click the .vb
 I suggest you first go to Windows Update, and scan the hotfixes first. When you do the second step, it will not show any window or prompt when its running, so don't be panic or running multiple times. Wait patiently for 2~20 minutes (depends on how many hotfixes you want to hide), and a final prompt will appear. If all successed, running the script second time, it will not show the hotfixes already hidden.
 
 ## How to edit
-Say you want to hide 5 hotfixes. Then change the line "Dim hideupdates(39) ......" to "Dim hideupdates(4) ......"  
+Say you want to hide 5 hotfixes. Change the line "Dim hideupdates(39) ......" to "Dim hideupdates(4) ......"  
   
-Then, edit every line of "hideupdates(*) = "KB*******" ". The example is in the script.  
+Then, edit every line of "hideupdates( * ) = "KB * * * * * * * " ". The example is in the script.  
   
 ---
 Have fun using the script and if there's any issue, rise an issue.
