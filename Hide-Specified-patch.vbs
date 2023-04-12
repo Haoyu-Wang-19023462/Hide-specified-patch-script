@@ -1,5 +1,6 @@
 ' =======================================================================================================
-' Version: 1.2.20230323_2117
+' Version: 1.2.20230412_2148
+' THIS FILE IS LICENSED UNDER THE GNU AFFERO GENERAL PUBLIC LICENSE v3.0
 ' Why-cn rewrited this for disabling outdated/unnecessary hotfixs for Windows 8.1 final installation ISO.
 ' Original content: https://superuser.com/questions/722667/how-to-hide-updates-in-windows-updates-without-gui
 ' Please read the following contents if you want to reuse, or republish to public sites.
