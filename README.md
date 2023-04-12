@@ -7,8 +7,8 @@ I have edited the script to fit my own purpose, and fixed some bugs inside it, a
 Any one can use this script freely, all the efforts belonged to its original creators. Do remember to quote their efforts.
 
 ## How to use
-First, you need to implement the .reg file to let the Explorer to allow you running the script as administrator. This is important, because it will need to operate the Windows Update, and that needs the administrator permission, and this selection is not shown on default in the Explorer.
-Second, run the vbs script as administrator. You may need to right click the .vbs file and select "Run the script as administrator".
+First, you need to implement the .reg file to let the Explorer to allow you running the script as administrator. This is important, because it will need to operate the Windows Update, and that needs the administrator permission, and this selection is not shown on default in the Explorer.  
+Second, run the vbs script as administrator. You may need to right click the .vbs file and select "Run the script as administrator".  
 I suggest you first go to Windows Update, and scan the hotfixes first. When you do the second step, it will not show any window or prompt when its running, so don't be panic or running multiple times. Wait patiently for 2~20 minutes (depends on how many hotfixes you want to hide), and a final prompt will appear. If all successed, running the script second time, it will not show the hotfixes already hidden.
 
 Have fun using the script and if there's any issue, rise an issue.
