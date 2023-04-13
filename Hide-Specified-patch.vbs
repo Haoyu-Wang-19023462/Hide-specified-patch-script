@@ -1,5 +1,5 @@
 ' =======================================================================================================
-' Version: 1.2.20230412_2148
+' Version: 1.3.20230413_2035
 ' THIS FILE IS LICENSED UNDER THE GNU AFFERO GENERAL PUBLIC LICENSE v3.0
 ' Why-cn rewrited this for disabling outdated/unnecessary hotfixs for Windows 8.1 final installation ISO.
 ' Original content: https://superuser.com/questions/722667/how-to-hide-updates-in-windows-updates-without-gui
@@ -19,51 +19,23 @@
 Dim WSHShell, StartTime, ElapsedTime, strUpdateName, strAllHidden
 Dim Checkagain 'Find more keep going otherwise Quit
 
-Dim hideupdates(39) 'FOR REUSER: change the number inside the brackets to fit the count - 1 of the hotfixs you want to hide
+Dim hideupdates(12) 'FOR REUSER: change the number inside the brackets to fit the count - 1 of the hotfixs you want to hide
 ' for example, if you want to hide 40 hotfixs, the number inside the brackets should be 39.
 ' FOR REUSER: the contents inside the quote below can be keys inside the hotfixs descriptions, like if you do not want some updates for Microsoft Edge, put "Edge" inside.
 
-hideupdates(0) = "KB2931358" 
-hideupdates(1) = "KB2931366" 
-hideupdates(2) = "KB2937220" 
-hideupdates(3) = "KB2938772"
-hideupdates(4) = "KB2949621"
-hideupdates(5) = "KB2939153"
-hideupdates(6) = "KB2958262"
-hideupdates(7) = "KB2958263"
-hideupdates(8) = "KB2961072"
-hideupdates(9) = "KB2962140"
-hideupdates(10) = "KB2965142"
-hideupdates(11) = "KB2965500"
-hideupdates(12) = "KB2966407"
-hideupdates(13) = "KB2968599"
-hideupdates(14) = "KB2971203"
-hideupdates(15) = "KB2973351"
-hideupdates(16) = "KB2975061"
-hideupdates(17) = "KB2976627"
-hideupdates(18) = "KB2977629"
-hideupdates(19) = "KB2978002"
-hideupdates(20) = "KB2981580"
-hideupdates(21) = "KB2987107"
-hideupdates(22) = "KB2989647"
-hideupdates(23) = "KB2989930"
-hideupdates(24) = "KB2998527"
-hideupdates(25) = "KB3001237"
-hideupdates(26) = "KB3003057"
-hideupdates(27) = "KB3004545"
-hideupdates(28) = "KB3013531"
-hideupdates(29) = "KB3014442"
-hideupdates(30) = "KB3024751"
-hideupdates(31) = "KB3038002"
-hideupdates(32) = "KB3044374"
-hideupdates(33) = "KB3045719"
-hideupdates(34) = "KB3046480"
-hideupdates(35) = "KB3046737"
-hideupdates(36) = "KB3062760"
-hideupdates(37) = "KB3133690"
-hideupdates(38) = "KB3184143"
-hideupdates(39) = "KB4486107"
-
+hideupdates(0) = "KB2989930" 
+hideupdates(1) = "KB3013531"
+hideupdates(2) = "KB3024751"
+hideupdates(3) = "KB3038002"
+hideupdates(4) = "KB3044374"
+hideupdates(5) = "KB3045719"
+hideupdates(6) = "KB3046480"
+hideupdates(7) = "KB3046737"
+hideupdates(8) = "KB3133690"
+hideupdates(9) = "KB3184143"
+hideupdates(10) = "KB2938861" 
+hideupdates(11) = "KB3185319" 
+hideupdates(12) = "KB5001027" 
 
 Set WSHShell = CreateObject("WScript.Shell")
 
@@ -93,7 +65,7 @@ strText = strText & strAllHidden
 strText = strText & vbCrLf & ""
 strText = strText & vbCrLf & "Total Time : " & ElapsedTime
 strText = strText & vbCrLf & "===================="
-strText = strText & vbCrLf & "Original From Maxpsoft, edited by Why-cn."
+strText = strText & vbCrLf & "Originated from Maxpsoft, edited by Why-cn."
 strText = strText & vbCrLf & "You are free to use & copy, but read the comments in the vbs source code first."
 intType = vbOkOnly
 
